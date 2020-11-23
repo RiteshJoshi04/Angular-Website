@@ -6,6 +6,8 @@ import { ShopNavbarComponent } from './Components/shop-navbar/shop-navbar.compon
 import { ShopSidebarComponent } from './Components/shop-sidebar/shop-sidebar.component';
 import { ShopItemsComponent } from './Components/shop-items/shop-items.component';
 import { ShopFooterComponent } from './Components/shop-footer/shop-footer.component';
+import { CalculateDiscountPipe } from './Pipes/calculate-discount.pipe';
+import { HighlightDirective } from './Directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { ShopFooterComponent } from './Components/shop-footer/shop-footer.compon
     ShopNavbarComponent,
     ShopSidebarComponent,
     ShopItemsComponent,
-    ShopFooterComponent
+    ShopFooterComponent,
+    CalculateDiscountPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule

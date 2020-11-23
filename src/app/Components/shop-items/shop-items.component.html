@@ -7,10 +7,11 @@
         <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="#">{{i.title}}</a>
+            <a href="#">{{i.title | uppercase}}</a>
           </h4>
           <h5>$ {{i.price}}</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+          <h5>Discounted amount ${{i.discount}}</h5>
+          <p appHighlight highlightColor="yellow" class="card-text">{{i.description}}</p>
         </div>
         <div class="card-footer">
           <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
